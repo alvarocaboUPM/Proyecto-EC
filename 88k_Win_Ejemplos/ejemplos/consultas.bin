@@ -1,0 +1,354 @@
+Fecha: 22/11/21     21:14
+
+
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'LongCad', pasándole una cadena de 22 caracteres y todos
+los registros partiendo de valores iniciales distintos de cero
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres y
+trata de localizar el situado (solo) en la posición 0
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres y
+trata de localizar el situado al menos en la posición 0
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres y
+trata de localizar el situado en la posición 0 y en otras.
+El valor del parámetro 'from' es mayor que cero
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres y
+trata de localizar un carácter que no está presente
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres y
+trata de localizar un carácter que solo está presente después
+de la posición determinada por el parámetro 'to'
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres
+y parámetros 'from' y 'to' con el mismo valor
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 22 caracteres y
+trata de localizar el situado en la posición 20. Todos los
+registros parten de valores iniciales distintos de cero
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 22 caracteres y
+trata de localizar el situado en las posiciones 5 y 20, que
+están fuera del rango 'from' a 'to'. Todos los registros
+parten de valores iniciales distintos de cero
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena larga y trata
+de localizar el situado en una de las posiciones finales que
+forma parte del rango definido por los parámetros 'from' y
+'to'. El valor numérico del carácter buscado es mayor de 150
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena larga y trata de
+localizar el situado en una de las posiciones finales que no
+forma parte del rango definido por los parámetros 'from' y 'to'
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaCar', pasándole una cadena de 10 caracteres y trata
+de localizar el que se indica en el primer parámetro, que en este
+caso tiene un valor numérico mayor de 150 y está situado hacia el
+final de la cadena 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de 10 caracteres y
+una posición tal que la subcadena buscada tiene un tamaño
+máximo igual a tres caracteres
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de 10 caracteres y
+una posición tal que no se encuentra la subcadena buscada
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de tamaño mediano y
+una posición tal que la subcadena buscada tiene un tamaño
+máximo que es mayor de 10 caracteres
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de tamaño mediano y
+una posición tal que la subcadena buscada tiene un tamaño
+máximo que es de un único carácter
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de tamaño mediano y
+una posición tal que la subcadena buscada tiene un tamaño
+máximo que es de solo dos caracteres
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de tamaño mediano y
+una posición tal que la subcadena buscada tiene un tamaño
+máximo que es de solo dos caracteres. Todos los registros
+parten de valores iniciales distintos de cero
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena de longitud mayor
+de 20 caracteres y múltiples repeticiones de subcadenas formadas
+por caracteres cuyo código ascii corresponde a valores cercanos
+al máximo. Todos los registros parten de valores iniciales
+distintos de cero
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'BuscaMax', pasándole una cadena igual a la
+del ejemplo detallado en la presentación del proyecto (N=4)
+y un valor 26 en el parámetro "max"
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Checksum', pasándole una cadena con más de 20
+caracteres cuyo código ascii tiene un valor cercano al máximo
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Checksum', pasándole una cadena con longitud mayor
+de 20 que no es múltiplo de cuatro y cuyos caracteres tienen
+valores cercanos al mínimo y al máximo
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Checksum', pasándole una cadena con longitud mayor
+de 20 que no es múltiplo de cuatro y cuyos caracteres tienen
+valores cercanos al mínimo y al máximo. Todos los registros
+parten de valores iniciales distintos de cero
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de 20 caracteres que
+no admite compresión
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de 32 caracteres que
+admite la máxima compresión
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de caracteres igual
+a la del ejemplo detallado en la presentación del proyecto (N=4)
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de caracteres igual
+a la del ejemplo detallado en la presentación del proyecto (N=4).
+Todos los registros parten de valores iniciales distintos de cero
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 30 caracteres y múltiples repeticiones de subcadenas formadas
+por caracteres cuyo código ascii corresponde a valores cercanos
+al mínimo o al máximo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 20 caracteres y múltiples repeticiones de subcadenas formadas
+por caracteres cuyo código ascii corresponde a valores cercanos
+al mínimo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 20 caracteres y múltiples repeticiones de subcadenas formadas
+por caracteres cuyo código ascii corresponde a valores cercanos
+al máximo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 20 caracteres idénticos
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 20 caracteres con subcadenas repetidas de 4 caracteres. Todos
+los registros parten de valores iniciales distintos de cero
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 256 caracteres que solo tiene 2 caracteres diferentes.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de 20 caracteres que no admite
+compresión
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de 32 caracteres de texto que
+admite la máxima compresión
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de caracteres igual a la del ejemplo
+detallado en la presentación del proyecto (N=4)
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de caracteres igual a la del ejemplo
+detallado en la presentación del proyecto (N=4). Todos los
+registros parten de valores iniciales distintos de cero
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de longitud mayor de 30 caracteres
+y múltiples repeticiones de subcadenas formadas por
+caracteres cuyo código ascii corresponde a valores cercanos
+al mínimo o al máximo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de longitud mayor de 20 caracteres
+y múltiples repeticiones de subcadenas formadas por caracteres
+cuyo código ascii corresponde a valores cercanos al mínimo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de longitud mayor de 20 caracteres
+y múltiples repeticiones de subcadenas formadas por caracteres
+cuyo código ascii corresponde a valores cercanos al máximo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de longitud mayor de 20 caracteres
+idénticos
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de longitud mayor de 20 caracteres
+con subcadenas repetidas de 4 caracteres. Todos los registros
+parten de valores iniciales distintos de cero
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Descomprime', pasándole un texto comprimido que
+corresponde a una cadena de longitud mayor de 256 caracteres
+que solo tiene 2 caracteres diferentes.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de 16 caracteres
+idénticos.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de 32 caracteres que
+admite la máxima compresión.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de 32 caracteres que
+admite la máxima compresión. Tras el terminador, la cadena va
+seguida por un carácter arbitrario.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de 33 caracteres que
+admite la máxima compresión.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de 33 caracteres que
+admite la máxima compresión.
+Tras el terminador, la cadena va seguida por caracteres arbitrarios.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de caracteres similar
+a la del ejemplo detallado en la presentación del proyecto
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de caracteres similar
+a la del ejemplo detallado en la presentación del proyecto. Tras
+el terminador, la cadena va seguida por caracteres arbitrarios.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de más de 260
+caracteres. Tras el terminador, la cadena va seguida por
+caracteres arbitrarios.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de longitud mayor
+de 20 caracteres con subcadenas repetidas de 4 caracteres.
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Llama a 'Verifica', pasándole una cadena de longitud mayor
+de 20 caracteres con subcadenas repetidas de 4 caracteres. Todos
+los registros parten de valores iniciales distintos de cero
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Depuración BMdeb: Usa subrutinas auxiliares del DATSI.
+Llama a 'BuscaMax', pasándole una cadena de tamaño mediano y
+una posición tal que la subcadena buscada tiene un tamaño
+máximo que es de solo dos caracteres
+_Error de alineamiento a palabra_ 
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Depuración BMdeb: Usa subrutinas auxiliares del DATSI.
+Llama a 'Checksum', pasándole una cadena con más de 20 caracteres
+cuyo código ascii tiene un valor cercano al máximo
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Depuración COdeb: Usa subrutinas auxiliares del DATSI.
+Llama a 'Comprime', pasándole una cadena de longitud mayor
+de 30 caracteres y múltiples repeticiones de subcadenas formadas
+por caracteres cuyo código ascii corresponde a valores cercanos
+al mínimo o al máximo
+_Error de instrucción ilegal en dirección: 700
+------------------------------------------------------------------
+Su implementación falla en una prueba en que se hace lo siguiente:
+- Depuración BMdeb: Usa subrutinas auxiliares del DATSI.
+Llama a 'Verifica', pasándole una cadena de 33 caracteres
+que admite la máxima compresión. Tras el terminador, la
+cadena va seguida por caracteres arbitrarios.
+_Error de instrucción ilegal en dirección: 700
+---------------------------------
+	Casos de prueba:       75
+	Pasados: 18
+	Con error: 57
+	Alineamiento a palabra erróneo: 9
+	Instrucción ilegal: 32
+---------------------------------
+Nº de pruebas que falla por subrutina: 
+Subr LongCad 1 de 9
+Subr BuscaCar 11 de 11
+Subr CoincidenCad 0 de 6
+Subr BuscaMax 8 de 8
+Subr Checksum 3 de 7
+Subr Comprime 10 de 10
+Subr Descomprime 10 de 10
+Subr Verifica 10 de 10
+Subr BMdeb 1 de 1
+Subr CHdeb 1 de 1
+Subr COdeb 1 de 1
+Subr VEdeb 1 de 1
+Fecha: 22/11/21     21:14
+

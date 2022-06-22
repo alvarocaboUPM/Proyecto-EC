@@ -1,0 +1,13 @@
+//tipos de datos//
+* char -> 1 byte unsigned (ASCII)
+* Char[] cadena:
+ 	>/dir_comienzo -> char[0] hasta char[n]='NULL' 
+  	  (0x00) != '\0' (0x30)
+	> POSICION_CADENA -> short (2bytes)
+	> LENGTH_CADENA -> byte (1-255)
+
+//subrutinas
+long = LongCad ( cadena )
+rv = BuscaCar( C, ref, from, to )
+rv = BuscaMax( ref, max, jj )
+rv = CheckSum( texto )

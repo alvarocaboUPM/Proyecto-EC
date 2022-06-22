@@ -1,0 +1,156 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+												 
+			; PROYECTO ENSAMBLADOR				 
+		; ESTRUCTURA DE COMPUTADORES 21/22		 
+												 
+;@authors:
+		; 200172; 02329006A; Cabo Ciudad, Álvaro; alvaro.cabo@alumnos.upm.es
+		; 200068; 04232107S; Fernández de Gracia, Pablo; pablo.fdegracia@alumnos.upm.es
+		; v1.0								 
+												 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;;;;;;;;;;;;;;;;; MACROS ;;;;;;;;;;;;;;;;;;;;
+DBNZ:		MACRO(ra, etiq)
+			sub ra, ra, 1
+			cmp r23, ra, r0
+			bb0 eq, r23, etiq
+			ENDMACRO
+			
+LEA:		MACRO(ra, etiq)
+			or ra, r0, low(etiq)
+			or.u ra, ra, high(etiq)
+			ENDMACRO
+			
+LOAD:		MACRO(ra, etiq)
+			LEA(ra, etiq)
+			ld 	ra, ra, r0
+			ENDMACRO
+
+PUSH: 		MACRO(ra)
+			sub r30, r30, 4
+			st 	ra, r30, 0
+			ENDMACRO
+
+POP: 		MACRO(ra)
+			ld 	ra, r30, 0
+			add r30, r30, 4
+			ENDMACRO
+			
+FIN:		MACRO()
+			or r30, r31, r0
+			POP(r30);
+			POP(r1)
+			jmp(r1)
+			ENDMACRO
+
+;;;;;;;;;;; VARIABLES GLOBALES ;;;;;;;;;;;;;
+
+org 0x00; marca la posicion de memoria de inicio
+
+;;;;;;;;;;;;;;; SUBRUTINAS ;;;;;;;;;;;;;
+
+
+; LONGITUD -> long = LongCad ( cadena )
+; @param:
+	; cadena: Es la cadena de caracteres de la que se calcular´a su longitud. Es un parmetro de entrada
+	; que se pasa por direcci´on, por lo que ocupa 4 bytes.
+; @return :
+	; long: La funci´on devuelve la longitud de la cadena proporcionada en su ´unico par´ametro y sin
+	; incluir el car´acter terminador 0x00. Es un n´umero entero (positivo o nulo) que se devuelve en r29.
+
+	LongCad: ld.b r3, r30, r0; r3 <- primer byte de r30 (cadena)
+		addu r2, r2, r0; cargo el contador (long) en el byte 1 de r2 a 0
+		
+	Bucle: 
+		
+		cmp r27, r3, 0x00; Si el carácter es equtivalente a 0x00, que se acabe el bucle
+		bb1 eq, r27, Fin; y no lo sume al contador
+		
+		cmp r26, r2, 255; Si el contador > 255 se acaba 
+		bb1 gt, r26, Fin
+		
+		addu r7, r7, 4; guardo un 4 para multiplicarlo y obtener el siguiente caracter
+		addu r2, r2, 1; r2 <- r2+1
+		mulu r5, r7, r2; r5 <- 4*contador (dirección efectiva)
+		ld.b r3, r20, r5 ;paso al caracter siguiente de la cadena (r3 <- caracter incial + contador)
+		br Bucle
+	Fin:
+		addu r29, r2, r0; return el contador en r29
+		;FIN()
+	
+	
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;Busqueda de un Char
+; rv = BuscaCar( C, ref, from, to )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+	;Primero creamos el marco de pila
+	; PUSH (r1)
+	; PUSH (r31)
+	; or r31, r30, r0
+	
+	; Fin_buscachar:
+	; FIN()
+	
+;CoincidenCad
+; long = CoincidenCad ( cadena1, cadena2 )
+
+	;Primero creamos el marco de pila
+		; PUSH (r1)
+		; PUSH (r31)
+		; or r31, r30, r0
+	
+	; Fin_coinciden:
+	; FIN()
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+; BÚSQUEDA SUBCADENA MÁS LARGA
+; rv = BuscaMax( ref, max, jj )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+; Checksum
+; rv = CheckSum( texto )
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; Comprime
+; rv = Comprime( texto, comprdo )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Descomprime
+; rv = Descomprime( com, desc )
+
+
+;;;;;;;;;;;;;;; PROGRAMA PRINCIPAL ;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;; CASOS PRUEBAS ;;;;;;;;;;;;;
+;Sqrt1d(0) = 0
+
+
+	org 	0x100;
+	;res 	20;
+DA1: data "hey\0" ; 5
+
+PPAL: 		or r30, r0, low(DA1) ;r30 contiene la direccion reflejada en DA1
+			; or		r30, r0, 0x9000
+			; LEA(r27, DA1); tenemos la dirección 
+			
+			; PUSH	(r27)
+			; bsr		Long1
+			; POP		(r27)
+			; stop
+			
+			; ld 		r13, r10, 0 		; palabra almacenada en DA1
+			; ld.b 	r14, r10, 0			;1er byte de la palabra almacenada en DA1 (signo)
+			; ld.bu 	r15, r10, 0			;1er byte de la palabra almacenada en DA1 (sin signo)
+			; ld.h 	r16, r10, 0			;1º mitad (half) de palabra almacenada en DA1 (signo)
+			; ld.hu 	r17, r10, 0			; 1º mitad (half) de palabra almacenada en DA1 (sin signo)
+			; ld.d 	r18, r10, 0			; doble palabra almacenada a partir de DA1 (r18, r19)
